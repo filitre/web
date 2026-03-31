@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | FILICON</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Zkopíruj stejné styly jako v index.html */
+        :root { --primary: #6366f1; --secondary: #a855f7; --bg: #0f172a; --card-bg: rgba(30, 41, 59, 0.7); --text: #f8fafc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg); color: var(--text); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text); text-decoration: none; }
+        .contact-form { max-width: 600px; margin: 4rem auto; background: var(--card-bg); padding: 3rem; border-radius: 20px; }
+        input, textarea { width: 100%; padding: 1rem; margin-bottom: 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 10px; }
+        .btn { width: 100%; padding: 1rem; background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; }
+        footer { text-align: center; padding: 4rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">FILICON</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="sluzby.html">Služby</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+<div class="contact-form">
+    <h2 style="margin-bottom: 2rem; text-align: center;">Napište nám</h2>
+    <input type="text" placeholder="Vaše jméno">
+    <input type="email" placeholder="Váš email">
+    <textarea rows="5" placeholder="Jak vám můžeme pomoci?"></textarea>
+    <button class="btn">Odeslat zprávu</button>
+</div>
+<footer>&copy; 2026 FILICON.</footer>
+</body>
+</html>

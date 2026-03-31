@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Služby | FILICON</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Zkopíruj stejné styly jako v index.html (nebo je dej do externího souboru style.css) */
+    :root { --primary: #6366f1; --secondary: #a855f7; --bg: #0f172a; --card-bg: rgba(30, 41, 59, 0.7); --text: #f8fafc; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; background-image: radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 40%); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 4rem 10%; }
+    .card { background: var(--card-bg); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s; }
+    .card:hover { border-color: var(--primary); transform: translateY(-5px); }
+    footer { text-align: center; padding: 4rem; opacity: 0.6; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">FILICON</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Domů</a></li>
+    <li><a href="sluzby.html">Služby</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+<h2 style="text-align: center; font-size: 3rem; margin-top: 4rem;">Naše Služby</h2>
+<div class="services-grid">
+  <div class="card"><h3>UI/UX Design</h3><p>Navrhujeme rozhraní, která uživatelé milují.</p></div>
+  <div class="card"><h3>Web Development</h3><p>Rychlé a bezpečné weby postavené na nejnovějších technologiích.</p></div>
+  <div class="card"><h3>SEO & Marketing</h3><p>Zajistíme, aby vás na internetu nikdo nepřehlédl.</p></div>
+</div>
+<footer>&copy; 2026 FILICON.</footer>
+</body>
+</html>

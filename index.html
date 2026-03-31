@@ -4,249 +4,40 @@
     <meta name="google-site-verification" content="PWwDZ2cCgtXsWl0yM1S8wlUHTQrGn5OSWyxp5sA0MFE" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moderní Portfólio | Budoucnost Webů</title>
-    <meta name="description" content="Moderní digitální studio zaměřené na UI/UX design a rychlé webové aplikace v roce 2026.">
-    <meta name="keywords" content="web design, tvorba webu, SEO, digitální studio, UX">
+    <title>FILICON | Home</title>
+    <meta name="description" content="Moderní digitální studio FILICON.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #6366f1;
-            --secondary: #a855f7;
-            --bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text: #f8fafc;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg);
-            background-image:
-                    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
-                    radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 40%);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-
-        /* Navigace */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 10%;
-            position: sticky;
-            top: 0;
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        /* Sekce */
-        .page {
-            display: none;
-            padding: 4rem 10%;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        .page.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Hero Sekce */
-        .hero {
-            text-align: center;
-            padding: 6rem 10%;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-        }
-
-        .hero span {
-            color: var(--primary);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
-        }
-
-        /* Karty Služeb */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            border-color: var(--primary);
-            transform: translateY(-5px);
-        }
-
-        /* Kontakt */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            padding: 3rem;
-            border-radius: 20px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: white;
-            border-radius: 10px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 4rem;
-            font-size: 0.9rem;
-            opacity: 0.6;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } /* Pro zjednodušení v ukázce */
-        }
+        :root { --primary: #6366f1; --secondary: #a855f7; --bg: #0f172a; --card-bg: rgba(30, 41, 59, 0.7); --text: #f8fafc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; background-image: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; position: sticky; top: 0; backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .hero { text-align: center; padding: 8rem 10%; }
+        .hero h1 { font-size: 4rem; margin-bottom: 1.5rem; }
+        .hero span { color: var(--primary); }
+        .btn { display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3); }
+        footer { text-align: center; padding: 4rem; opacity: 0.6; }
     </style>
 </head>
 <body>
-
 <nav>
-    <div class="logo">FILICON</div>
+    <a href="index.html" class="logo">FILICON</a>
     <ul class="nav-links">
-        <li><a onclick="showPage('home')">Domů</a></li>
-        <li><a onclick="showPage('services')">Služby</a></li>
-        <li><a onclick="showPage('contact')">Kontakt</a></li>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="sluzby.html">Služby</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
-
 </nav>
-
-<section id="home" class="page active">
-    <div class="hero">
-        <h1>Vytvoříme Vám <span>web</span> na míru.</h1>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">
-            Firma zaměřená na webové aplikace s moderním designem.
-        </p>
-        <button class="btn" onclick="showPage('services')">Prohlédnout služby</button>
-    </div>
+<section class="hero">
+    <h1>Vytvoříme Vám <span>web</span> na míru.</h1>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">Firma zaměřená na webové aplikace s moderním designem.</p>
+    <a href="sluzby.html" class="btn">Prohlédnout služby</a>
 </section>
-
-<section id="services" class="page">
-    <h2 style="text-align: center; font-size: 2.5rem;">Naše Služby</h2>
-    <div class="services-grid">
-        <div class="card">
-            <h3>UI/UX Design</h3>
-            <p>Navrhujeme rozhraní, která uživatelé milují. Jednoduchost spojená s estetikou.</p>
-        </div>
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>Rychlé a bezpečné weby postavené na nejnovějších technologiích.</p>
-        </div>
-        <div class="card">
-            <h3>SEO & Marketing</h3>
-            <p>Zajistíme, aby vás na internetu nikdo nepřehlédl.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="page">
-    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Napište nám</h2>
-    <div class="contact-form">
-        <input type="text" placeholder="Vaše jméno">
-        <input type="email" placeholder="Váš email">
-        <textarea rows="5" placeholder="Jak vám můžeme pomoci?"></textarea>
-        <button class="btn" style="width: 100%;">Odeslat zprávu</button>
-    </div>
-</section>
-
-<footer>
-    &copy; 2026 FILICON.
-</footer>
-
-<script>
-    function showPage(pageId) {
-        // Skryje všechny sekce
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => {
-            page.classList.remove('active');
-        });
-
-        // Zobrazí vybranou sekci
-        const activePage = document.getElementById(pageId);
-        activePage.classList.add('active');
-
-        // Scroll nahoru
-        window.scrollTo(0, 0);
-    }
-</script>
+<footer>&copy; 2026 FILICON.</footer>
 </body>
 </html>
